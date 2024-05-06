@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="src/output.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-quicksand h-[1000vh]">
+    <header class="container mx-auto">
+        <nav class="container mx-auto bg-red-primary w-full text-white fixed z-50 shadow-lg">
+            <div class="flex justify-between items-center py-3 px-7">
+                <div class="flex gap-5 items-center">
+                    <img src="https://skilvul.com/static/skilvul-anniversary-white.svg" width="121" alt="" srcset="">
+                    <div class="relative">
+                        <input type="text"
+                            class="bg-white py-2.5 px-3 rounded-md w-[24rem] text-sm placeholder:text-black text-black font-semibold outline-none border-none"
+                            placeholder="Cari baju yang kamu sukai...">
+                        <div class="absolute right-0 top-0" style="margin-top: 4px; margin-right: 8px;">
+                            <button type="submit"
+                                class="bg-red-primary hover:bg-red-500 rounded-full p-1 w-8 text-center">
+                                <i class="fas fa-search text-white text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-red-primary rounded-full p-1 w-9 text-center border-2 border-white hover:border-red-primary duration-500 cursor-pointer">
+                        <i class="fas fa-shopping-cart text-white text-sm"></i>
+                    </div>
+                    <div
+                        class="bg-red-primary rounded-full p-1 w-9 text-center border-2 border-white hover:border-red-primary duration-500 cursor-pointer">
+                        <i class="fas fa-headset text-white text-sm"></i>
+                    </div>
+                    <div
+                        class="bg-red-primary rounded-full p-1 w-9 text-center border-2 border-white hover:border-red-primary duration-500 cursor-pointer">
+                        <i class="fas fa-bell text-white text-sm"></i>
+                    </div>
+                </div>
+                <a class="flex items-center gap-3 cursor-pointer">
+                    <span class="font-semibold hover:text-red-200 duration-200">Codereeeze25</span>
+                    <img src="https://avatars.githubusercontent.com/u/159593076?v=4"
+                        class="rounded-full p-0.5 border-2 border-white" width="45" alt="" srcset="">
+                </a>
+            </div>
+            <div class="flex justify-between items-center text-black font-semibold text-sm">
+                <div class="bg-white p-2 rounded-tr-md">
+                    <a href="">Atur alamat pengiriman
+                        <i class="fas fa-map-marker-alt text-red-primary"></i></a>
+                </div>
+                <div class="flex gap-7 text-white">
+                    <a href="" class="hover:text-red-200 duration-150">T-Shirt</a>|
+                    <a href="" class="hover:text-red-200 duration-150">Kemeja</a>|
+                    <a href="" class="hover:text-red-200 duration-150">Jaket Tracker</a>|
+                    <a href="" class="hover:text-red-200 duration-150">Anak-anak</a>|
+                    <a href="" class="hover:text-red-200 duration-150">Baju Muslim</a>|
+                    <a href="" class="hover:text-red-200 duration-150">Olahraga</a>|
+                    <a href="" class="hover:text-red-200 duration-150">Remaja</a>
+                </div>
+                <div class="bg-white p-2 rounded-tl-md">
+                    <div class="flex items-center gap-3 cursor-pointer">
+                        <span>Bahasa Indonesia</span>
+                        <img src="img/id.svg" width="20" class="border rounded-full" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container mx-auto px-12 text-gray-600">
+        <div class="pt-36">
+            <div class="flex flex-wrap justify-between">
+                <div class="self-start max-w-2xl w-full">
+                    <div class="w-full rounded-xl border p-4 mb-5">
+                        <h2 class="text-xl font-bold mb-1.5">Alamat pengiriman <i
+                                class="fas fa-map-marker-alt text-red-primary"></i></h2>
+                        <hr class="mb-4">
+                        <div class="flex justify-between items-center">
+                            <p class="font-semibold text-base">Atyla Azfa Al Harits | +62 812 3456 7891</p>
+                            <div class="bg-red-primary text-white p-1 rounded-md text-xs font-semibold block">Utama
+                            </div>
+                        </div>
+                        <p class="font-semibold text-sm text-red-primary">codereeeze25@gmail.com</p>
+                        <p class="text-sm mb-2 font-medium"><i class="fas fa-map-marker-alt text-red-primary"></i> Jl.
+                            Jendral Soedirman No.1945, Tambakreja, Lakbok, Ciamis, Jawa Barat 46385
+                        </p>
+                        <a href="" class="inline-block mb-3">
+                            <button
+                                class="bg-red-primary text-red-primary bg-opacity-20 p-1 rounded-md text-xs font-semibold block">Ganti
+                                alamat</button>
+                        </a>
+                        <textarea id="message" name="note" rows="3"
+                            class="block p-2.5 w-full text-sm bg-gray-50 rounded-lg border focus:ring-red-500 focus:border-red-500 outline-none"
+                            placeholder="Catatan untuk kurir (opsional)"></textarea>
+                    </div>
+                    <div class="w-full rounded-xl border p-4 mb-5">
+                        <h2 class="text-xl font-bold mb-1.5">Detail pembelian <i
+                                class="fas fa-box-open text-red-primary"></i></h2>
+                        <hr class="mb-4">
+                        <div class="w-full p-1 bg-red-primary rounded-md mb-5">
+                            <p class="text-xs text-white font-medium">
+                                <i class="fas fa-store"></i> Acumalaka Store - Kota Tasikmalaya
+                            </p>
+                        </div>
+                        <div class="flex gap-7 mb-3">
+                            <img src="https://dynamic.zacdn.com/N8sHQYr21UmYQ62hqBBIYJ-N3QI=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/pennay-7948-7431024-5.jpg"
+                                alt="" width="100" class="rounded-md self-start">
+                            <div class="self-start">
+                                <h3 class="font-bold text-lg mb-2">KAOS KESSOKU BAND BOCCHI THE ROCK | BAJU ANIME
+                                    PREMIUM
+                                    HIGH QUALITY T-SHIRT - Putih</h3>
+                                <p class="text-xs font-medium">Type: Warna putih</p>
+                                <p class="text-xs font-medium">Size: XL</p>
+                                <p class="text-xs font-medium">Quantity: 10</p>
+                                <p class="text-base font-medium"><span
+                                        class="text-red-primary font-bold">30.000</span>/produk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start max-w-md w-full">
+                    <div class="w-full rounded-xl border p-4 mb-5">
+                        <h2 class="text-xl font-bold mb-1"><i class="fas fa-wallet text-red-primary"></i> Metode
+                            pembayaran</h2>
+                        <p class="mb-2 text-sm font-semibold text-red-primary">Pilih metode pembayaran yang kamu sukai
+                        </p>
+                        <hr class="mb-4">
+                        <div class="flex items-center gap-2">
+                            <img src="https://i.pinimg.com/originals/2b/1f/11/2b1f11dec29fe28b5137b46fffa0b25f.png"
+                                alt="" width="50">
+                            <div class="flex items-center">
+                                <p class="text-sm font-semibold mr-40">Pembayaran elektronik <br><span
+                                        class="text-base">DANA</span></p>
+                                <span class="text-red-primary font-bold text-sm cursor-pointer">Ganti</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full rounded-xl border p-4 mb-5">
+                        <h2 class="text-xl font-bold mb-1"><i class="fas fa-truck text-red-primary"></i> Jasa Ekspedisi
+                        </h2>
+                        <p class="mb-2 text-sm font-semibold text-red-primary">Pilih kecepatan pengiriman paket
+                        </p>
+                        <hr class="mb-4">
+                        <div class="flex items-center gap-4">
+                            <img src="https://www.static-src.com/siva/coreasset/04_2023/1681788768456/standard-09-2023.svg?w=48"
+                                alt="" width="45">
+                            <div class="flex items-center">
+                                <p class="text-base font-bold mr-36">Express <br><span
+                                        class="text-sm font-semibold">Estimasi tiba 24 - 25 Mei</span></p>
+                                <span class="text-red-primary font-bold text-sm cursor-pointer">Ganti</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full rounded-xl border p-4 mb-5">
+                        <h2 class="text-xl font-bold mb-1">Cek pembayaran</h2>
+                        <hr class="mb-4">
+                        <p class="p-1 rounded-md bg-red-50 flex justify-between text-sm">
+                            <span class="font-semibold">Harga produk (10)</span>
+                            <span class="font-bold">Rp.300.000</span>
+                        </p>
+                        <p class="p-1 rounded-md flex justify-between text-sm">
+                            <span class="font-semibold">Ongkir</span>
+                            <span class="font-bold">Rp.20.000</span>
+                        </p>
+                        <p class="p-1 rounded-md bg-red-50 flex justify-between text-sm">
+                            <span class="font-semibold">Layanan pembayaran</span>
+                            <span class="font-bold">Rp.500</span>
+                        </p>
+                        <p class="p-1 rounded-md flex justify-between text-sm mb-3">
+                            <span class="font-semibold">Biaya admin</span>
+                            <span class="font-bold">Rp.1.000</span>
+                        </p>
+                        <hr class="border-2 bg-gray-400 mb-3">
+                        <p class="font-semibold flex justify-between mb-3">Total bayar <span class="text-2xl font-bold text-red-primary">300.000</span></p>
+                        <button class="bg-red-primary hover:bg-red-500 p-2.5 text-white w-full font-bold rounded-lg"><i class="fas fa-money-bill-wave-alt"></i> Bayar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>

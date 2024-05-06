@@ -1,0 +1,8 @@
+.enveloppe {
+	padding: 1em;
+	border: 16px solid transparent;
+	border-image: 16 repeating-linear-gradient(45deg, red 0, red 1em, transparent 0, transparent 2em,
+	              #b67 0, #b67 3em, transparent 0, transparent 4em);
+	
+	max-width: 20em;
+}
