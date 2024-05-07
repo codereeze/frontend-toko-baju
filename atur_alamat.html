@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile saya</title>
+    <title>Atur alamat</title>
     <link rel="stylesheet" href="src/output.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,10 +81,10 @@
         <div class="pt-36">
             <div class="flex gap-3">
                 <div class="self-start max-w-sm w-full border shadow-md rounded-md p-4">
-                    <a class="bg-red-primary hover:bg-red-500 block mb-2 p-2 rounded-md w-full cursor-pointer font-semibold text-white">
+                    <a class="hover:bg-red-500 block mb-2 p-2 rounded-md w-full cursor-pointer font-semibold hover:text-white">
                         Profile saya
                     </a>
-                    <a class="hover:bg-red-500 block mb-2 p-2 rounded-md w-full cursor-pointer font-semibold hover:text-white">
+                    <a class="bg-red-primary hover:bg-red-500 block mb-2 p-2 rounded-md w-full cursor-pointer font-semibold text-white">
                         Atur alamat
                     </a>
                     <a class="hover:bg-red-500 block mb-2 p-2 rounded-md w-full cursor-pointer font-semibold hover:text-white">
@@ -92,54 +92,58 @@
                     </a>
                 </div>
                 <div class="self-start w-full border shadow-md rounded-md p-4">
-                    <h1 class="text-xl font-bold mb-1">Profile saya</h1>
+                    <h1 class="text-xl font-bold mb-1">Atur alamat</h1>
                     <hr class="mb-3">
-                    <p class="font-semibold mb-2">Foto profile</p>
-                    <div class="flex gap-4 items-center mb-1">
-                        <img src="https://assets.skilvul.com/users/cltqq5evn03jr01s4f3gdwlfz-1711958320000.jpg"
-                            width="90" alt="" class="rounded-full">
-                        <button class="bg-red-primary hover:bg-red-500 rounded-md text-white text-sm p-2 font-bold"><i
-                                class="fas fa-upload"></i> Upload
-                            foto</button>
-                        <button
-                            class="border border-red-primary text-red-primary hover:bg-red-primary hover:text-white duration-300 rounded-md text-sm p-2 font-bold">Hapus
-                            foto</button>
-                    </div>
-                    <p class="text-sm mb-3">Ukuran foto maksimal sebesar 2MB dan harus berformat jpg, jpeg, atau png.
-                    </p>
+                    <div class="flex items-center p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50" role="alert">
+                        <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                        </svg>
+                        <span class="sr-only">Info</span>
+                        <div class="font-semibold">
+                          <span class="font-bold">Penting!</span> Pasikan alamat terlampir dengan benar. kesalahan pengiriman diluar tanggung jawab kami.
+                        </div>
+                      </div>
                     <form action="" method="post">
                         <div class="grid grid-cols-2 gap-3">
                             <div>
-                                <p class="font-semibold mb-1">Nama lengkap</p>
+                                <p class="font-semibold mb-1">Nama jalan</p>
                                 <input type="text" class="p-2 rounded-md border w-full font-medium" value=""
-                                    name="nama">
+                                    name="">
                             </div>
                             <div>
-                                <p class="font-semibold mb-1">Username</p>
+                                <p class="font-semibold mb-1">Rt/Rw</p>
                                 <input type="text" class="p-2 rounded-md border w-full font-medium" value=""
-                                    name="username">
+                                    name="">
                             </div>
                             <div>
-                                <p class="font-semibold mb-1">Alamat email</p>
+                                <p class="font-semibold mb-1">Desa/kelurahan</p>
                                 <input type="text" class="p-2 rounded-md border w-full font-medium" value=""
-                                    name="email">
+                                    name="">
                             </div>
                             <div>
-                                <p class="font-semibold mb-1">No. Telepon</p>
+                                <p class="font-semibold mb-1">Kecamatan</p>
                                 <input type="text" class="p-2 rounded-md border w-full font-medium" value=""
-                                    name="no_telp">
+                                    name="">
                             </div>
                             <div>
-                                <p class="font-semibold mb-1">Jenis kelamin</p>
-                                <select class="p-2 rounded-md border w-full font-medium cursor-pointer" name="jk">
-                                    <option value="Laki-laki" selected>Laki-laki</option>
-                                    <option value="Perempuan">Perempuan</option>
-                                </select>
+                                <p class="font-semibold mb-1">Kabupaten</p>
+                                <input type="text" class="p-2 rounded-md border w-full font-medium" value=""
+                                    name="">
+                            </div>
+                            <div>
+                                <p class="font-semibold mb-1">Provinsi</p>
+                                <input type="text" class="p-2 rounded-md border w-full font-medium" value=""
+                                    name="">
+                            </div>
+                            <div>
+                                <p class="font-semibold mb-1">Kode pos</p>
+                                <input type="text" class="p-2 rounded-md border w-full font-medium" value=""
+                                    name="">
                             </div>
                         </div>
                         <button
                             class="bg-red-primary hover:bg-red-500 rounded-md text-white text-sm p-2.5 font-bold mt-4"><i
-                                class="fas fa-save"></i> Simpan perubahan</button>
+                                class="fas fa-save"></i> Tambah alamat</button>
                     </form>
                 </div>
             </div>
